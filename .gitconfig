@@ -1,2 +1,3 @@
 [alias]
     graph = log --all --graph --decorate
+    test
