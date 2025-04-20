@@ -9,6 +9,8 @@ dnsTunneling=true
 firewall=true
 # 强制 WSL 使用 Windows 的 HTTP 代理信息
 autoProxy=true
+# 如果设置为 true，则任何新创建的 VHD 将自动设置为稀疏。允许 WSL 的虚拟磁盘自动识别未使用的空间，并动态调整其大小。
+sparseVhd=true
 
 [wsl2]
 # 设置虚拟处理器数量
