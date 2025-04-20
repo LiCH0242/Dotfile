@@ -1,6 +1,19 @@
 [experimental]
+# 检测空闲 CPU 使用率后，自动释放缓存的内存。gradual 慢速释放，dropCache 立即释放
 autoMemoryReclaim=gradual  
+# 网络模式。mirrored镜像网络，默认NAT 网络
 networkingMode=mirrored
+# 将 DNS 请求从 WSL 代理到 Windows 的方式
 dnsTunneling=true
+# 基于Windows 防火墙规则筛选 WSL 网络流量
 firewall=true
+# 强制 WSL 使用 Windows 的 HTTP 代理信息
 autoProxy=true
+
+[wsl2]
+# 设置虚拟处理器数量
+processors=6
+# 限制虚拟机最大内存使用
+memory=10GB
+# 设置基于硬盘的内存交换空间
+swap=4GB
